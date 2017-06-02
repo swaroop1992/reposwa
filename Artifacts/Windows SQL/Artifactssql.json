@@ -1,0 +1,15 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2016-11-28/dtlArtifacts.json",
+  "title": "SQL Server Express",
+  "description": "Download and Install SQL",
+  "tags": [
+    "Windows",
+    "Chrome",
+    "Google"
+  ],
+  "iconUri": "https://www.microsoft.com/en-us/sql-server/sql-server-editions-express",
+  "targetOsType": "Windows",
+  "runCommand": {
+    "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./sqlserver.ps1 -PackageList ', 'googlechrome', '\"')]"
+  }
+}
